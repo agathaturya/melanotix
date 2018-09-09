@@ -12,15 +12,12 @@ document.getElementById("capture").onclick = function() {
         img.src = canvas.toDataURL();
 
         document.getElementById("output").prepend(img);
-        var bkg= document.getElementById("background");
-        bkg.src=output.src;
-        alert("most updated")
+      
+        alert("the most updated")
 
         img.url = "https://melanomics.me/canada.png";
 
-        alert(img.url);
-
-       document.getElementById("webcam").hidden = true;
+        document.getElementById("webcam").hidden = true;
 
         // Sending and receiving data in JSON format using POST method
 
@@ -53,3 +50,4 @@ document.getElementById("capture").onclick = function() {
         xhr.send(data);
 
 };
+
