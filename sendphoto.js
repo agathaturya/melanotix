@@ -100,6 +100,13 @@ function process(parsedData){
     }
     var preds = [a,b,c,d];
    localStorage.setItem("preds",preds);
+  loadScript("response.js")
 
+
+}
+function loadScript(src){
+    var el = document.createElement("script");
+    el.src = src;
+    document.body.appendChild(el);
 }
 
