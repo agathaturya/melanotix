@@ -15,7 +15,7 @@ document.getElementById("capture").onclick = function() {
 
         img.url = "https://melanomics.me/canada.png";
 
-        alert("GELLLLLLLLLOO");
+        alert("heyyayayay");
 
        document.getElementById("webcam").hidden = true;
 
@@ -23,9 +23,9 @@ document.getElementById("capture").onclick = function() {
 
         var xhr = new XMLHttpRequest();
         
-        var url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/1b2c0a21-2177-4299-aa3f-fe218235cdc4/url";
-        xhr.open("POST", data, true);
-        xhr.setRequestHeader("Content-Type", "application/json");
+        var url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/1b2c0a21-2177-4299-aa3f-fe218235cdc4/image";
+        xhr.open("POST", img.src, true);
+        xhr.setRequestHeader("Content-Type", "application/octet-stream");
 
         xhr.setRequestHeader("Prediction-Key", "e468e9927724421ea6995c7293a13788");
 
