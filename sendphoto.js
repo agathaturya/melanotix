@@ -97,7 +97,7 @@ function process(parsedData){
        }
        if(currentLabel["tagName"]=="Textured Surface"){
         d=currentLabel["probability"];
-        sum+=4;
+        sum+=d;
        }
 
     }
