@@ -32,8 +32,7 @@ document.getElementById("capture").onclick = function() {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
 
-                //console.log(xhr.responseText);
-                console.log(JSON.parse(xhr.responseText));
+                console.log(xhr.responseText);
                 process(JSON.parse(xhr.responseText));
 
             }
@@ -78,7 +77,7 @@ function process(parsedData){
     var c;
     var d;
     for(var x=0; x<labels.length ;x++){
-    currentLabel=labels[x]
+        currentLabel=parsedData[x]
      console.log(currentLabel);
      console.log();
        if(currentLabel["tagName"]=="Asymmetry"){
