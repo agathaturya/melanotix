@@ -72,9 +72,31 @@ function process(parsedData){
     //todo: process
     var labels= parsedData["predictions"];
     console.log(labels.length);
+    var a;
+    var b;
+    var c;
+    var d;
     for(var x=0; x<labels.length ;x++){
         currentLabel=parsedData[x]
-        console.log(parsedData[x]);
+       // console.log(parsedData[x]);
+       if(currentLabel["tagName"]=="Asymmetry"){
+        a=currentLabel["probability"];
+       }
+        if(currentLabel["tagName"]=="Rought edges"){
+        b=currentLabel["probability"];
+
+       }
+       if(currentLabel["tagName"]=="Color"){
+        c=currentLabel["probability"];
+
+       }
+       if(currentLabel["tagName"]=="Textured Surface"){
+        d=currentLabel["probability"];
+       }
+
     }
+    var preds = {a,b,c,d};
+   localStorage.setItem("preds",preds);
+   
 }
 
