@@ -12,9 +12,9 @@ document.getElementById("capture").onclick = function() {
         //img.src = canvas.toDataURL();
 
         document.getElementById("output").prepend(img);
-        alert("h")
+        alert("hw")
 
-        capture.src=image.src;
+        capture.src=img.src;
 
         document.getElementById("webcam").hidden = true;
 
