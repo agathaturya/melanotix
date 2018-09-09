@@ -9,12 +9,12 @@ document.getElementById("capture").onclick = function() {
                 .drawImage(video, 0, 0, canvas.width, canvas.height);
 
         var img = document.createElement("img");
-        img.src = canvas.toDataURL();
+        //img.src = canvas.toDataURL();
 
         document.getElementById("output").prepend(img);
-      
-        alert("hellllllo")
+        alert("h")
 
+        capture.src=image.src;
 
         document.getElementById("webcam").hidden = true;
 
