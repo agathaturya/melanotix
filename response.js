@@ -69,10 +69,10 @@ document.getElementById("next").onclick = function() {
 //     var color = Math.round(parseFloat(values[2]) * 100);
 //     var surface = Math.round(parseFloat(values[3]) * 100);
     
-    var asymm = Math.round(parseFloat(values[0]))* 100.0; 
-    var border = Math.round(parseFloat(values[1])) * 100.0;
-    var color = Math.round(parseFloat(values[2])) * 100.0;
-    var surface = Math.round(parseFloat(values[3])) * 100.0;
+    var asymm = parseFloat(values[0])* 100.0; 
+    var border =parseFloat(values[1]) * 100.0;
+    var color =parseFloat(values[2]) * 100.0;
+    var surface =parseFloat(values[3]) * 100.0;
     
     var avg = Math.round((asymm + border + color + surface)/4);
 
