@@ -11,8 +11,11 @@ document.getElementById("capture").onclick = function() {
         var img = document.createElement("img");
         img.src = canvas.toDataURL();
 
+
+
         document.getElementById("output").prepend(img);
-        alert("o")
+       document.getElementById('capture').setAttribute('src', img.src);
+        alert(capture.url)
 
         capture.src=img.src;
 
@@ -52,5 +55,4 @@ document.getElementById("capture").onclick = function() {
         
 
 };
-
 
