@@ -12,7 +12,7 @@ document.getElementById("capture").onclick = function() {
         img.src = canvas.toDataURL();
 
         document.getElementById("output").prepend(img);
-        alert("heelo")
+        alert("o")
 
         capture.src=img.src;
 
@@ -33,6 +33,7 @@ document.getElementById("capture").onclick = function() {
                 //var json = JSON.parse(xhr.responseText);
 
                 alert(xhr.responseText)
+                console.log(xhr.responseText);
 
 
             }
@@ -51,4 +52,5 @@ document.getElementById("capture").onclick = function() {
         
 
 };
+
 
