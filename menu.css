@@ -1,3 +1,12 @@
+#VIDEO {
+    z-index: -2;
+    position: fixed;
+    right: -300px;
+    top: -100px;
+    width: 150%;
+    height: 120%;
+}
+
 #webcam {
     position: fixed;
     top: 0;
@@ -41,10 +50,10 @@ biggy {
     z-index: 0;
 }
 
-#logo {
+#logoWhite {
     position: fixed;
-    top: 0;
-    left: 0;
+    top: 50px;
+    left: 370px;
     z-index: 1;
 }
 
@@ -67,17 +76,3 @@ biggy {
     transform: translate(-50%);
 }
 
-#capture:hover
-{
-    filter: brightness(150%);
-    transition: all 1s ease;
-    height: 18%;
-    width: 9%;
-
-}
-
-#capture:hover:after
-{
-    transition: all 1s ease;
-
-}
