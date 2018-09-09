@@ -5,7 +5,7 @@ var downloadTimer = setInterval(function(){
         clearInterval(downloadTimer);
 
     if (timeleft === 0) {
-        document.getElementById("webcam").hidden = true;
+        //document.getElementById("webcam").hidden = true;
 
         const canvas = document.createElement('canvas'); // create a canvas
 
@@ -14,7 +14,7 @@ var downloadTimer = setInterval(function(){
         canvas.getContext('2d')
             .drawImage(video, 0, 0, canvas.width, canvas.height);
 
-        var img = document.createElement("img");
+        var img = document.createElement("photoCapture");
         img.src = canvas.toDataURL();
         document.getElementById("output").prepend(img);
 
@@ -39,12 +39,12 @@ var downloadTimer = setInterval(function(){
             {
                 var json = JSON.parse(xhr.responseText);
 
-                alert(xhr.status)
+
             }
         };
 
 
-        alert(img.url);
+
         var data = JSON.stringify('{"Url": "https://www.medicalnewstoday.com/content/images/hero/079/79115/79115_256.jpg"}');
 
         xhr.send(data);
