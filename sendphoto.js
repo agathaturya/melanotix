@@ -70,7 +70,10 @@ function dataURItoBlob(dataURI) {
 
 function process(parsedData){
     //todo: process
-    for(var x=0; 0<parsedData.length;x++){
+    var labels= parsedData["predictions"];
+    console.log(labels.length);
+    for(var x=0; x<labels.length ;x++){
+        currentLabel=parsedData[x]
         console.log(parsedData[x]);
     }
 }
