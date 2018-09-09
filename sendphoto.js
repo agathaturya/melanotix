@@ -13,7 +13,7 @@ document.getElementById("capture").onclick = function() {
 
         document.getElementById("output").prepend(img);
 
-        img.url = "../pictureTaken.png";
+        img.url = "pictureTaken.png";
 
         alert(img.url);
 
