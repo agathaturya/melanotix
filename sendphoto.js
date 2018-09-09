@@ -33,7 +33,7 @@ document.getElementById("capture").onclick = function() {
             if (xhr.readyState == 4 && xhr.status == 200) {
 
                 console.log(xhr.responseText);
-                proccess(JSON.parse(xhr.responseText));
+                process(JSON.parse(xhr.responseText));
 
             }
             else
