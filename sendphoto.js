@@ -114,7 +114,7 @@ function process(parsedData){
 };
 
 
-}
+
 function loadScript(src){
     var el = document.createElement("script");
     el.src = src;
