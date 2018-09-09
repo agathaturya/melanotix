@@ -70,7 +70,9 @@ biggy {
     color:#ffffff;
     font-family:Arial;
     font-size:28px;
- position: fixed;
+        vertical-align: top;
+
+     position: fixed;
     padding:18px 31px;
     text-decoration:none;
 }
@@ -78,6 +80,8 @@ biggy {
     background-color:transparent;
 }
 .myButton:active {
+        vertical-align: top;
+
     /*position:relative;
     top:1px;*/
 }
