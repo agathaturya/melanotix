@@ -74,4 +74,3 @@ function process(parsedData){
         console.log(parsedData[x]);
     }
 }
-
