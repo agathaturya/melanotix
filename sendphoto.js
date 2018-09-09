@@ -50,7 +50,7 @@ document.getElementById("capture").onclick = function() {
 
         //var data = JSON.stringify({"Url": "https://melanotix.me/capture.png"});
         var body = img.src;
-        xhr.send(data);
+        xhr.send(body);
 
         
 
