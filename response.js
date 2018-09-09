@@ -61,7 +61,7 @@ document.getElementById("next").onclick = function() {
     {
         cycle=0;
     }
-
+    console.log(stuff)
     var values = stuff.split(",");
 
     var asymm = Math.round(parseFloat(values[0]) * 100);
