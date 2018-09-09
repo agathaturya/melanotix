@@ -13,7 +13,7 @@ document.getElementById("capture").onclick = function() {
 
         document.getElementById("output").prepend(img);
       
-        alert("the most updated")
+        alert("the absolute most updated")
 
         img.url = "https://melanomics.me/canada.png";
 
@@ -30,15 +30,15 @@ document.getElementById("capture").onclick = function() {
 
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
-                var json = JSON.parse(xhr.responseText);
+              //  var json = JSON.parse(xhr.responseText);
 
-                alert(json)
+                      alert(xhr.responseText);
 
             }
             else
             {
-                var json = JSON.parse(xhr.responseText);
-
+              //  var json = JSON.parse(xhr.responseText);
+                      alert(xhr.responseText);
 
             }
         };
