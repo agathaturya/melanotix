@@ -13,7 +13,7 @@ document.getElementById("capture").onclick = function() {
 
         document.getElementById("output").prepend(img);
       
-        alert("the very absolute most updated")
+        alert("the very absolute most updated!!!!!")
 
         document.getElementById("webcam").hidden = true;
 
@@ -25,7 +25,8 @@ document.getElementById("capture").onclick = function() {
         xhr.setRequestHeader("Content-Type", "application/json");
 
         xhr.setRequestHeader("Prediction-Key", "e468e9927724421ea6995c7293a13788");
-    
+        var data = JSON.stringify({"Url": "https://www.medicalnewstoday.com/content/images/hero/079/79115/79115_256.jpg"});
+        xhr.send(data);
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
               //  var json = JSON.parse(xhr.responseText);
@@ -43,9 +44,7 @@ document.getElementById("capture").onclick = function() {
 
 
 
-        var data = JSON.stringify({"Url": "https://www.medicalnewstoday.com/content/images/hero/079/79115/79115_256.jpg"});
-
-        xhr.send(data);
+       
 
 };
 
