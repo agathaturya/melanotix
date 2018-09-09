@@ -61,8 +61,8 @@ biggy {
     background-color:transparent;
     -moz-border-radius:35px;
     top: 100px;
-    left: 370px;
-    bottom: 100px;
+    left: 0px;
+  
     -webkit-border-radius:35px;
     border-radius:35px;
     border:1px solid #ffffff;
