@@ -77,6 +77,7 @@ function process(parsedData){
     var b;
     var c;
     var d;
+    var sum=0;
     for(var x=0; x<labels.length ;x++){
     currentLabel=labels[x]
 
@@ -84,20 +85,24 @@ function process(parsedData){
      console.log();
        if(currentLabel["tagName"]=="Asymmetrical"){
         a=currentLabel["probability"];
+        sum+=a;
        }
         if(currentLabel["tagName"]=="Rough edges"){
         b=currentLabel["probability"];
-
+        sum+=b;
        }
        if(currentLabel["tagName"]=="Gradient"){
         c=currentLabel["probability"];
-
+        sum+=c;
        }
        if(currentLabel["tagName"]=="Textured Surface"){
         d=currentLabel["probability"];
+        sum+=4;
        }
 
     }
+    var avg=sum/4.0;
+    alert(avg);
     var preds = [a,b,c,d];
    localStorage.setItem("preds",preds);
   loadScript("response.js")
