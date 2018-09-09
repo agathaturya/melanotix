@@ -83,8 +83,8 @@ biggy {
 }
 .myButton:active {
     vertical-align: top;
-/*    position:relative;
-*/    
+    position:relative;
+   
 top:1px;
 }
 .boxed {
