@@ -61,8 +61,8 @@ biggy {
     background-color:transparent;
     -moz-border-radius:35px;
     top: 100px;
-    left: 0px;
-  
+    left: 370px;
+    bottom: 100px;
     -webkit-border-radius:35px;
     border-radius:35px;
     border:1px solid #ffffff;
@@ -78,11 +78,14 @@ biggy {
 }
 .myButton:hover {
     background-color:transparent;
+        vertical-align: top;
+
 }
 .myButton:active {
     vertical-align: top;
-    position:relative;
-    top:1px;
+/*    position:relative;
+*/    
+top:1px;
 }
 .boxed {
     border: 4px solid #950000;
