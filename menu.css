@@ -60,7 +60,7 @@ biggy {
 .myButton {
     background-color:transparent;
     -moz-border-radius:35px;
-    top: 50px;
+    top: 100px;
     left: 370px;
     -webkit-border-radius:35px;
     border-radius:35px;
@@ -70,8 +70,7 @@ biggy {
     color:#ffffff;
     font-family:Arial;
     font-size:28px;
-        vertical-align: top;
-
+    vertical-align: top;
      position: fixed;
     padding:18px 31px;
     text-decoration:none;
