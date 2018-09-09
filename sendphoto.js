@@ -13,7 +13,7 @@ document.getElementById("capture").onclick = function() {
 
         document.getElementById("output").prepend(img);
       
-        alert("the")
+        alert("th")
 
 
         document.getElementById("webcam").hidden = true;
@@ -21,22 +21,21 @@ document.getElementById("capture").onclick = function() {
         // Sending and receiving data in JSON format using POST method
 
         var xhr = new XMLHttpRequest();
-        var url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/1b2c0a21-2177-4299-aa3f-fe218235cdc4/url";
+        var url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/1b2c0a21-2177-4299-aa3f-fe218235cdc4/url/";
         xhr.open("POST", data, true);
         xhr.setRequestHeader("Content-Type", "application/json");
         xhr.setRequestHeader("Prediction-Key", "e468e9927724421ea6995c7293a13788");
        
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
+                var json = JSON.parse(xhr.responseText);
 
-                alert(xhr.responseText)
+                alert(json)
 
             }
             else
             {
-                   
-                                    alert(xhr.responseText)
-
+                var json = JSON.parse(xhr.responseText);
 
 
             }
