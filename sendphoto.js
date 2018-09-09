@@ -1,5 +1,5 @@
 document.getElementById("capture").onclick = function() {
-
+$("popup").css("display", "inline");
         const canvas = document.createElement('canvas'); // create a canvas
 
         canvas.width = document.getElementById("webcam").videoWidth; // set its size to the one of the video
