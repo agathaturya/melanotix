@@ -13,7 +13,8 @@ document.getElementById("capture").onclick = function() {
 
         document.getElementById("output").prepend(img);
 
-        img.url = "pictureTaken.png";
+       img.url = "https://melanomics.me/canada.png";
+
 
         alert(img.url);
 
