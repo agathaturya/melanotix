@@ -13,7 +13,7 @@ document.getElementById("capture").onclick = function() {
 
         document.getElementById("output").prepend(img);
       
-        alert("hello")
+        alert("hellllllo")
 
 
         document.getElementById("webcam").hidden = true;
@@ -29,15 +29,17 @@ document.getElementById("capture").onclick = function() {
  
        
         xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                var json = JSON.parse(xhr.responseText);
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                //var json = JSON.parse(xhr.responseText);
 
-                alert(json)
+                alert(xhr.responseText)
+
 
             }
             else
             {
-                var json = JSON.parse(xhr.responseText);
+               // var json = JSON.parse(xhr.responseText);
+                alert(xhr.responseText)
 
 
             }
