@@ -15,7 +15,7 @@ document.getElementById("capture").onclick = function() {
 
         img.url = "https://melanomics.me/canada.png";
 
-        alert(img.url);
+        alert("GELLLLLLLLLOO");
 
        document.getElementById("webcam").hidden = true;
 
