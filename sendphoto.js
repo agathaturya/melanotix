@@ -13,9 +13,7 @@ document.getElementById("capture").onclick = function() {
 
         document.getElementById("output").prepend(img);
       
-        alert("the absolute most updated")
-
-        img.url = "https://melanomics.me/canada.png";
+        alert("the very absolute most updated")
 
         document.getElementById("webcam").hidden = true;
 
@@ -27,7 +25,7 @@ document.getElementById("capture").onclick = function() {
         xhr.setRequestHeader("Content-Type", "application/json");
 
         xhr.setRequestHeader("Prediction-Key", "e468e9927724421ea6995c7293a13788");
-
+    
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
               //  var json = JSON.parse(xhr.responseText);
