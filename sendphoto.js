@@ -78,7 +78,7 @@ function process(parsedData){
     var c;
     var d;
     for(var x=0; x<labels.length ;x++){
-        currentLabel=parsedData[x]
+    currentLabel=labels[x]
      console.log(currentLabel);
      console.log();
        if(currentLabel["tagName"]=="Asymmetry"){
