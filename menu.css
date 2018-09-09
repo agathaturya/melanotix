@@ -58,6 +58,7 @@ biggy {
 }
 
 
+
 .myButton {
     background-color:transparent;
     -moz-border-radius:35px;
@@ -102,6 +103,24 @@ biggy {
     transform: translate(-50%);
 }
 
+blue {
+    color: #00FFFF;
+}
+
+white {
+        color: #FFFFFF;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    position: relative;
+    float: left;
+    top: 550px;
+    left: 75%;
 
 
+}
 
+.cal {color: #fff;}
