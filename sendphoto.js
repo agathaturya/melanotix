@@ -32,7 +32,8 @@ document.getElementById("capture").onclick = function() {
         xhr.onreadystatechange = function () {
             if (xhr.readyState === 4 && xhr.status === 200) {
 
-                console.log(xhr.responseText);
+                //console.log(xhr.responseText);
+                console.log(JSON.parse(xhr.responseText));
                 process(JSON.parse(xhr.responseText));
 
             }
@@ -77,17 +78,18 @@ function process(parsedData){
     var c;
     var d;
     for(var x=0; x<labels.length ;x++){
-        currentLabel=parsedData[x]
+    currentLabel=labels[x]
+
      console.log(currentLabel);
      console.log();
-       if(currentLabel["tagName"]=="Asymmetry"){
+       if(currentLabel["tagName"]=="Asymmetrical"){
         a=currentLabel["probability"];
        }
-        if(currentLabel["tagName"]=="Rought edges"){
+        if(currentLabel["tagName"]=="Rough edges"){
         b=currentLabel["probability"];
 
        }
-       if(currentLabel["tagName"]=="Color"){
+       if(currentLabel["tagName"]=="Gradient"){
         c=currentLabel["probability"];
 
        }
@@ -96,7 +98,7 @@ function process(parsedData){
        }
 
     }
-    var preds = {a,b,c,d};
+    var preds = [a,b,c,d];
    localStorage.setItem("preds",preds);
 
 }
