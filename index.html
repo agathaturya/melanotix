@@ -1,25 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <meta charset="UTF-8">
     <title>Melanotix</title>
     <link rel="stylesheet" href="menu.css">
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("body").css("display", "none");
 
-     <a href="https://melanotix.me/main_activity.html" class="myButton">Begin</a>
-         <img src="logo_white.png" id="logoWhite" height=35%, width=47%>
+            $("body").fadeIn(1000);
 
-    <video width="1800" height="500" autoplay loop muted id="VIDEO">
-            <source src="menuBackground.mp4" type="video/mp4">
-            <source src="menuBackground.ogg" type="video/ogg">
-            Your browser does not support the video tag.
+            $("a").click(function(event){
+                event.preventDefault();
+                linkLocation = this.href;
+                $("body").fadeOut(1000, redirectPage);
+            });
 
-    </video>
-
-
+            function redirectPage() {
+                window.location = linkLocation;
+            }
+        });
+    </script>
 
 
 </head>
 <body>
+
+<a href="https://melanotix.me/main_activity.html" class="myButton" id="b1">Begin</a>
+
+<a href="https://docs.google.com/presentation/d/105etyIC_7-HI3s9jJbgcd1Bc-o_snPItB_WqhkYGp6I/edit?usp=sharing" class="myButton" id="b2">About</a>
+
+
+<img src="logo_white.png" id="logoWhite" height=30%, width=45%>
+
+<video width="1800" height="500" autoplay loop muted id="VIDEO">
+    <source src="menuBackground.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+
+</video>
+
+
 </body>
 </html>
