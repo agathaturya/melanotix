@@ -14,20 +14,19 @@ document.getElementById("capture").onclick = function() {
 
 
         document.getElementById("output").prepend(img);
-       document.getElementById('capture').setAttribute('src', img.src);
-        alert(capture.url)
+        // document.getElementById('capture').setAttribute('src', img.src);
 
-        capture.src=img.src;
+        //capture.src=img.src;
 
         document.getElementById("webcam").hidden = true;
 
         // Sending and receiving data in JSON format using POST method
 
         var xhr = new XMLHttpRequest();
-        var url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/1b2c0a21-2177-4299-aa3f-fe218235cdc4/url/";
+        var url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/1b2c0a21-2177-4299-aa3f-fe218235cdc4/image/";
          xhr.open("POST", url, true);
 
-        xhr.setRequestHeader("Content-Type", "application/json");
+        xhr.setRequestHeader("Content-Type", "application/octet-stream");
         xhr.setRequestHeader("Prediction-Key", "e468e9927724421ea6995c7293a13788");
  
        
@@ -49,7 +48,8 @@ document.getElementById("capture").onclick = function() {
             }
         };
 
-        var data = JSON.stringify({"Url": "https://melanotix.me/capture.png"});
+        //var data = JSON.stringify({"Url": "https://melanotix.me/capture.png"});
+        var body = img.src;
         xhr.send(data);
 
         
