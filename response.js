@@ -2,7 +2,8 @@ var cycle = 0;
 var stuff;
 window.onload = function(){
     stuff=localStorage.getItem("preds");
-    console.log("preds-->" + preds);
+    console.log("preds-->");
+    console.log(localStorage.getItem("preds"));
 }
 
 function getMeaning(numCase, value) {
