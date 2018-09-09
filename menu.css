@@ -70,6 +70,7 @@ biggy {
     color:#ffffff;
     font-family:Arial;
     font-size:28px;
+ position: fixed;
     padding:18px 31px;
     text-decoration:none;
 }
