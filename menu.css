@@ -72,7 +72,7 @@ biggy {
     font-family:Arial;
     font-size:28px;
     vertical-align: top;
-     position: fixed;
+    position: relative;
     padding:18px 31px;
     text-decoration:none;
 }
