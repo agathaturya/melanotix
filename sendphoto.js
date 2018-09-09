@@ -47,8 +47,6 @@ document.getElementById("capture").onclick = function() {
         var body = dataURItoBlob(img.src);
         xhr.send(body);
 
-        
-
 };
 function dataURItoBlob(dataURI) {
     // convert base64/URLEncoded data component to raw binary data held in a string
@@ -71,7 +69,9 @@ function dataURItoBlob(dataURI) {
 }
 
 function process(parsedData){
-
     //todo: process
+    for(var x=0; 0<parsedData.length;x++){
+        console.log(parsedData[x]);
+    }
 }
 
