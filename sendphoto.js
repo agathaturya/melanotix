@@ -22,6 +22,7 @@ document.getElementById("capture").onclick = function() {
         // Sending and receiving data in JSON format using POST method
 
         var xhr = new XMLHttpRequest();
+        
         var url = "https://southcentralus.api.cognitive.microsoft.com/customvision/v2.0/Prediction/1b2c0a21-2177-4299-aa3f-fe218235cdc4/url";
         xhr.open("POST", url, true);
         xhr.setRequestHeader("Content-Type", "application/json");
@@ -39,7 +40,7 @@ document.getElementById("capture").onclick = function() {
             {
                 var json = JSON.parse(xhr.responseText);
 
-
+                alert(json)
             }
         };
 
