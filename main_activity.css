@@ -54,12 +54,6 @@ biggy {
     padding: 20px 20px 20px 20px;
 }
 
-#output {
-    position: fixed;
-    top: 0;
-    left: 0;
-}
-
 #capture {
     position: fixed;
     top: 600px;
