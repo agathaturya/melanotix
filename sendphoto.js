@@ -103,7 +103,7 @@ function process(parsedData){
 
     }
         
-    var avg=sum/4.0;
+    var avg=(sum/4.0)*100;
     alert(avg)
     var preds = [a,b,c,d];
    // document.getElementById("titleItem").innerText = title;
