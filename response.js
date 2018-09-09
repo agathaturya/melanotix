@@ -62,6 +62,8 @@ document.getElementById("next").onclick = function() {
         cycle=0;
     }
 
+    if(stuff!=null){
+
     var values = stuff.split(",");
 
     var asymm = Math.round(parseFloat(values[0]) * 100);
@@ -116,6 +118,7 @@ document.getElementById("next").onclick = function() {
             meaning = getMeaning(4, avg);
 
             break;
+        }
     }
 
     document.getElementById("titleItem").innerText = title;
