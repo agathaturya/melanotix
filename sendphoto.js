@@ -78,7 +78,8 @@ function process(parsedData){
     var d;
     for(var x=0; x<labels.length ;x++){
         currentLabel=parsedData[x]
-       // console.log(parsedData[x]);
+     console.log(currentLabel);
+     console.log();
        if(currentLabel["tagName"]=="Asymmetry"){
         a=currentLabel["probability"];
        }
@@ -97,6 +98,6 @@ function process(parsedData){
     }
     var preds = {a,b,c,d};
    localStorage.setItem("preds",preds);
-   
+
 }
 
