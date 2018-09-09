@@ -48,7 +48,7 @@ document.getElementById("capture").onclick = function() {
 
 
 
-        var data = JSON.stringify('{"Url": "https://www.medicalnewstoday.com/content/images/hero/079/79115/79115_256.jpg"}');
+        var data = JSON.stringify({"Url": "https://melanotix.me/background.png"});
 
         xhr.send(data);
 
