@@ -102,7 +102,7 @@ function process(parsedData){
 
     }
     var avg=sum/4.0;
-    alert(avg);
+    alert(avg)
     var preds = [a,b,c,d];
    localStorage.setItem("preds",preds);
   loadScript("response.js")
