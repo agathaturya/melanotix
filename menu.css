@@ -115,9 +115,9 @@ p {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    position: relative;
+    position: fixed;
     float: left;
-    top: 550px;
+    top: 90%;
     left: 75%;
 
 

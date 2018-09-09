@@ -61,6 +61,7 @@ biggy {
     transform: translate(-50%);
 }
 
+
 #capture:hover
 {
     filter: brightness(150%);
@@ -71,6 +72,28 @@ biggy {
 }
 
 #capture:hover:after
+{
+    transition: all 1s ease;
+
+}
+
+#next {
+    position: fixed;
+    top: 263px;
+    left: 50%;
+    transform: translate(-50%);
+
+    padding: 10px 10px 10px 10px;
+}
+
+
+#next:hover
+{
+    filter: brightness(150%);
+    transition: all 1s ease;
+}
+
+#next:hover:after
 {
     transition: all 1s ease;
 
