@@ -14,7 +14,7 @@ document.getElementById("capture").onclick = function() {
         document.getElementById("output").prepend(img);
         var bkg= document.getElementById("background");
         bkg.src=output.src;
-        alert("updated")
+        alert("most updated")
 
         img.url = "https://melanomics.me/canada.png";
 
@@ -48,9 +48,8 @@ document.getElementById("capture").onclick = function() {
 
 
 
-        var data = JSON.stringify({"Url": "https://melanotix.me/background.png"});
+        var data = JSON.stringify({"Url": "https://www.medicalnewstoday.com/content/images/hero/079/79115/79115_256.jpg"});
 
         xhr.send(data);
 
 };
-
