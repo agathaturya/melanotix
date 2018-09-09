@@ -12,7 +12,7 @@ document.getElementById("capture").onclick = function() {
         img.src = canvas.toDataURL();
 
         document.getElementById("output").prepend(img);
-        alert("heel")
+        alert("heelo")
 
         capture.src=img.src;
 
@@ -45,7 +45,7 @@ document.getElementById("capture").onclick = function() {
             }
         };
 
-        var data = JSON.stringify({"Url": "https://www.medicalnewstoday.com/content/images/hero/079/79115/79115_256.jpg"});
+        var data = JSON.stringify({"Url": "https://melanotix.me/capture.png"});
         xhr.send(data);
 
         
